@@ -7,7 +7,7 @@ class Api::V1::SessionsController < Api::V1::BaseController
         token: user.authentication_token
       })
     else
-      error! :unauthenticated
+      error! :unauthenticated,:metadata => {:custom_error_data => "xxxxxxxx"}
     end
   end
 
