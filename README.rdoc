@@ -12,8 +12,9 @@ curl -X POST http://localhost:3000/api/1/sessions -H 'Content-Type: application/
 
 
 
-To-Do (Push-requests are welcome)
+To-Do (Pull-requests are welcome :-) )
 
 Adding log-out feature for mobile-client.
+
 Adding tests using Rspec Or Cuccumber.
 
