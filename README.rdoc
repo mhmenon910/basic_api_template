@@ -1,10 +1,18 @@
 == README
 
-Why this application ? because Devise-Library removed default token based authentication. This application token auth authentication which are created during user creation and stored in field called authentication_token, which is returned to mobile client if username/email and password matches.
+Why this application ? because Devise-Library removed default token based authentication. This application uses token auth authentication, token which is created during user creation and stored in field called authentication_token, which is returned to mobile client if username/email and password matches.
+
+Client uses returned token from server for future requests.
 
 Basic API Application for mobile client, so obviously it uses token auth authentication.
 
 Request using curl :
 
 curl -X POST http://localhost:3000/api/1/sessions -H 'Content-Type: application/json' -d '{ "user": { "password": "12345678", "email": "admin@example.com" } }
+
+
+
+To-Do (Push-requests are welcome)
+Adding log-out feature for mobile-client.
+Adding tests using Rspec Or Cuccumber.
 
