@@ -1,6 +1,6 @@
 == README
 
-Why this application ? because Devise-Library removed default token based authentication. This application uses token auth authentication, token which is created during user creation and stored in field called authentication_token, which is returned to mobile client if username/email and password matches.
+Why this application ? because default token based authentication has been removed from Devise-Library. This application uses token auth authentication, token which is created during user creation and stored in field called authentication_token, which is returned to mobile client if username/email and password matches.
 
 Client uses returned token from server for future requests.
 
